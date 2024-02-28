@@ -1,8 +1,7 @@
 import { Person } from "./Person";
 
-let person1 = new Person()
-    person1.name = "Cristian"
-    person1.age = 33;
+let person1 = new Person("Cristian Redondo", 33, "Calle Mendivil 56")
+    
 
 person1.printName();
 console.log(person1.yearOfBirth(2024));

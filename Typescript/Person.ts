@@ -6,11 +6,11 @@ export class Person
     public age: number;
     private address: string;
 
-    constructor()
+    constructor(name, age, address)
     {
-         this.name
-         this.age
-         this.address = "Calle Alcala 35, MAdrid"
+         this.name = name
+         this.age  = age
+         this.address = address
     }
     printName()
     {

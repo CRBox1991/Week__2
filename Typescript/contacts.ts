@@ -2,7 +2,7 @@ import { Person } from "./Person";
 
 export class Contacts
 {
-    public people: object []
+    public people: Person []
 
     constructor ()
     {
