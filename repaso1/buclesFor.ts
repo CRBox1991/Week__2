@@ -1,9 +1,9 @@
 
 
-function evenNumbers(num: number)
+export function evenNumbers(num: number)
 {
     
-    for(let i = 0; i < num ; i++)
+    for(let i:number = 0; i < num ; i++)
     {   
         if( i % 2 != 0) {
             console.log(i)
@@ -11,25 +11,25 @@ function evenNumbers(num: number)
     }     
 }
 
-evenNumbers(9)
-evenNumbers(20)
+//evenNumbers(9)
+//evenNumbers(20)
 
-function myRevert(myArr:string [])
+export function myRevert(myArr:string [])
 {   
     let arrInvertido: string [] = []
-    for(let i = myArr.length - 1; i >= 0; i--) { 
+    for(let i: number = myArr.length - 1; i >= 0; i--) { 
        
        arrInvertido.push(myArr[i])
     }
     return arrInvertido
 }
 
-console.log(myRevert(["Juan", "Pepe", "Alicia"]));
+//console.log(myRevert(["Juan", "Pepe", "Alicia"]));
 
-function isRainbow(colors: string[])
+export function isRainbow(colors: string[])
 {
     
-    for (let i = 0; i < colors.length; i++ )
+    for (let i: number = 0; i < colors.length; i++ )
     {
         if(colors[i] == "rojo")
         {
@@ -59,13 +59,13 @@ function isRainbow(colors: string[])
     }
 }
 
-isRainbow(["rojo", "marron", "verde", "amarillo", "magenta", "vinotinto", "burdeos", "ocre"])
+//isRainbow(["rojo", "marron", "verde", "amarillo", "magenta", "vinotinto", "burdeos", "ocre"])
 
 
-function add(myWords: string [])
+ export function add(myWords: string [])
 {   
     let myNunDeCaracteres: number = 0 
-    for (let i = 0; i < myWords.length; i++)
+    for (let i: number = 0; i < myWords.length; i++)
     {
      myNunDeCaracteres += myWords[i].length       
     }
@@ -73,4 +73,6 @@ function add(myWords: string [])
     
 }
 
-console.log(add(["rojo", "marron", "verde", "amarillo", "magenta", "vinotinto", "burdeos", "ocre"]))
+//console.log(add(["rojo", "marron", "verde", "amarillo", "magenta", "vinotinto", "burdeos", "ocre"]))
+
+

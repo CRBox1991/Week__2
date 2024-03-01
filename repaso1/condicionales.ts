@@ -1,6 +1,6 @@
 
 
-function zodiac(day:number, month:number)
+export function zodiac(day:number, month:number)
 {
     if ((day >= 21 && day <= 31 && month == 3) || (day >= 1 && day <= 19 && month == 4))
     { return "You are Aries"} 
@@ -34,7 +34,7 @@ function zodiac(day:number, month:number)
 // console.log(zodiac(17,1));
 // console.log(zodiac(32,1));
 
-function continent(country: string)
+export function continent(country: string)
 {
     if (country == "China" || country == "Japon"  || country == "India" || country =="Corea del Sur" || country == "Bangladesh")
     {
@@ -64,7 +64,7 @@ function continent(country: string)
 // continent("Canada");
 // continent("Egipto");
 
-function isEven(x: number)
+export function isEven(x: number)
 {
     if(x %2 == 0)
     {
@@ -75,7 +75,7 @@ function isEven(x: number)
     }
 }
  
-isEven(10)
-isEven(9)
+//isEven(10)
+//isEven(9)
 
 
