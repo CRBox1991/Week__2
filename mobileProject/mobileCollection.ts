@@ -35,5 +35,19 @@ export class MobileCollection
         }
         return sumTotal
     }
+    public printCollection(): string
+    {
+        let myColPrinted: string = ""
+        let string1: string = `This are my mobiles: \n`
+        let string2: string =`\nPrice overall: ${this.totalPrice} \n`
+
+        for (let i = 0; i < this.mobiles.length; i++)
+        {
+            myColPrinted +=  `\nThe characterictics of the mobile ${this.mobiles[i].getName()} are:\nName: ${this.mobiles[i].getName()}
+Trademark: ${this.mobiles[i].getTradeMark()}\nmodel: ${this.mobiles[i].getModel()}\nColor: ${this.mobiles[i].getColor()}\nPrice: ${this.mobiles[i].getPrice()}\n`
+        }
+        return string1 + myColPrinted + string2
+
+    }
 }
 
