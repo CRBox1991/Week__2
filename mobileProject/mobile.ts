@@ -55,4 +55,9 @@ export class Mobile
     {
         return this.price = price
     }
+    public printAll()
+    {
+        return `Name: ${this.name} \nTradeMark: ${this.tradeMark} \nmodel: ${this.model} \nColor: ${this.color} \nPrice: ${this.price} \n` 
+    }
+
 }
