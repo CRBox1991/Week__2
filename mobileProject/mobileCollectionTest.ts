@@ -11,3 +11,5 @@ let mobile4 = new Mobile("Alcatel", "Alca0000987889", "lujuria", "Alc35p", 99);
 let myCollection: Mobile [] =[mobile1, mobile2, mobile3, mobile4];
 
 let collection1 = new MobileCollection(myCollection)
+console.log(collection1.getTotalPrice());
+

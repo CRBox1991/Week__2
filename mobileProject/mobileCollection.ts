@@ -4,10 +4,10 @@ export class MobileCollection
 {
     private mobiles: Mobile[]
     private totalPrice: number
-    constructor(mobileCollectio: Mobile [])
+    constructor(mobileCollection: Mobile [])
     {
-        this.mobiles = mobileCollectio
-        this.totalPrice;
+        this.mobiles = mobileCollection
+        this.totalPrice = this.totalPriceCalcualtion()
     }
 
     public getMobiles()
@@ -25,6 +25,15 @@ export class MobileCollection
     public setTotalPrice(num: number)
     {
         this.totalPrice = num
+    }
+    private totalPriceCalcualtion(): number
+    {   
+        let sumTotal: number = 0
+        for(let i = 0; i < this.mobiles.length; i++)
+        {
+            sumTotal += this.mobiles[i].getPrice()            
+        }
+        return sumTotal
     }
 }
 
