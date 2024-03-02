@@ -1,10 +1,25 @@
 import { Point } from "./points";
 
-let myPoint = new Point(12, 45)
-console.log(myPoint.getX());
-console.log(myPoint.getY());
-console.log(myPoint.setX(32));
-console.log(myPoint.setY(29));
+let point1 = new Point(45, 67)
+//console.log(point1.getX());
+//console.log(point1.getY());
+//console.log(point1.setX(12));
+//console.log(point1.setY(23));
+console.log(point1.toString(45,67));
+//console.log(point1.distanceToOrigin());
+
+
+let point2 = new Point(15,45)
+let point3 = new Point(-14,-45)
+//console.log(point2.distanceToOrigin());
+//console.log(point2.calculateDistance(112));
+//console.log(point3.calculateDistance(112));
+
+
+
+
+
+
 
 
 
