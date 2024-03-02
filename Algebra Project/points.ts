@@ -44,5 +44,27 @@ public calculateDistance(anotherPoint: Point): number
     let distance1: number = Math.sqrt(((this.x - anotherPoint.getX())**2) + ((this.y - anotherPoint.getY())**2))
     return distance1
 }
+public getQuadrant(): number
+{
+    let myQuadrant: number = 0
+    if(this.x == 0 && this.y == 0)
+    {
+        return 0
+    } if(this.x > 0 && this.y > 0)
+    {
+        return 1
+    } if(this.x < 0 && this.y > 0)
+    {
+        return 2
+    } if(this.x < 0 && this.y < 0)
+    {
+        return 3
+    } if(this.x > 0 && this.y < 0)
+    {
+        return 4
+    }
+    return myQuadrant
+
+}
 }
 
