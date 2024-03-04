@@ -26,3 +26,52 @@ export function zodiac(day:number, month:number)
     { return "You are Pisces"}
     else { return "Wrong date"}
 }
+
+// console.log(zodiac(23,1));
+// console.log(zodiac(0,3));
+// console.log(zodiac(17,1));
+// console.log(zodiac(32,1));
+
+export function continent(country: string)
+{
+    if (country == "China" || country == "Japon"  || country == "India" || country =="Corea del Sur" || country == "Bangladesh")
+    {
+        console.log("Your are in Asia");
+    }
+    else if (country == "Italia" || country == "Francia" || country == "Portugal")
+    {
+        console.log("You are in Europe");        
+    }        
+    else if (country == "Marruecos" || country == "Tanger" || country == "Tunez" || country == "Egipto")
+    {
+        console.log("You are in Africa");        
+    }
+    else if ( country == "Australia" || country == "Nueva Zelanda" || country == "Fiyi" || country == "Islas Salomon")
+    {
+        console.log("You are in Oceania")
+    }
+    else if ( country == "EEUU" || country == "Argentina" || country == "Colombia" || country == "Canada")
+    {
+        console.log("You are in America")
+    }
+}
+
+// continent("China");
+// continent("Italia");
+// continent("Fiyi");
+// continent("Canada");
+// continent("Egipto");
+
+export function isEven(x: number)
+{
+    if(x %2 == 0)
+    {
+        console.log("El numero es par");        
+    } else
+    {
+        console.log("El numero es impar");        
+    }
+}
+ 
+//isEven(10)
+//isEven(9)
