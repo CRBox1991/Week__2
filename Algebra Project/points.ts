@@ -35,7 +35,7 @@ public distanceToOrigin(): number
 {    
 // la distacia cartesiana es d = sqrt ((x2 - x1)**2 + (y2 - y1)**2) d = (x2 - 0)**2 + (y2 -0)**2
 // por lo que se simplifica a d = ((x**2) + (y**2))
-    let distance: number = Math.round(Math.sqrt((Math.pow(this.x,2) + Math.pow(this.y, 2))))
+    let distance: number = Math.sqrt((Math.pow(this.x,2) + Math.pow(this.y, 2)))
     return distance
 }
 // la distacia cartesiana es d = sqrt ((x2 - x1)**2 + (y2 - y1)**2)
@@ -49,32 +49,36 @@ public getQuadrant(): number
     let myQuadrant: number = 0
     if(this.x == 0 && this.y == 0)
     {
-        return 0
+    return 0
     } if(this.x > 0 && this.y > 0)
     {
-        return 1
+    return 1
     } if(this.x < 0 && this.y > 0)
     {
-        return 2
+    return 2
     } if(this.x < 0 && this.y < 0)
     {
-        return 3
+    return 3
     } if(this.x > 0 && this.y < 0)
     {
-        return 4
+    return 4
     }
     return myQuadrant
 }
 public myNearest(points: Point []): Point
 {
-    let nearestPoint = new Point(0,0)
-        for (let i = 0; i < points.length; i++)
-    {
-        nearestPoint[i] = Math.min(nearestPoint.calculateDistance(points[i]))
-        //Math.ceil(points[i].calculateDistance(nearestPoint))
+    let nearestPoint = new Point(0,0) ;
+    let distanciaMenor: number = Number.MAX_VALUE
+    
+    for (let i = 0; i < points.length; i++)
+    {   let distancia = this.calculateDistance(points[i])
+        if (distancia < distanciaMenor)
+        {
+        distanciaMenor = distancia  
+        nearestPoint = points[i]    
+        }       
+          
     }
-
     return nearestPoint
 }
 }
-
