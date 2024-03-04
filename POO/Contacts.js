@@ -2,14 +2,13 @@ let {Person} = require(Person.js)
 
 
 class Contacts{
-    constructor(){
-
+    constructor()
+    {
         this.person = [] 
         this.name
-
     }
-printPersons(){
-  
+printPersons()
+    {  
     return this.person
     }    
 }
