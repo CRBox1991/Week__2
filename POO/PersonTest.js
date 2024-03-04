@@ -1,6 +1,5 @@
 let myLib = require("./person")
 
-
 let newPerson =  new myLib.Person (90, 198)
     newPerson.nombre = "Mario"
     newPerson.edad = 40
